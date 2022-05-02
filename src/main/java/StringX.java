@@ -32,22 +32,4 @@ public class StringX {
         }
         return count;
     }
-
-    public String[] fizzBuzz(int start, int end) {
-        String[] result = new String[end - start];
-        int arrayIndex = 0;
-        for (int index = start; index < end; index++) {
-            if (index % 3 ==0) {
-                result[arrayIndex] = "Fizz";
-            } else if (index % 5 ==0) {
-                result[arrayIndex] = "Buzz";
-            } else if (index % 15 ==0) {
-                result[arrayIndex] = "FizzBuzz";
-            } else {
-                result[arrayIndex] = String.valueOf(index);
-            }
-            arrayIndex++;
-        }
-        return result;
-    }
 }
